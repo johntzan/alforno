@@ -12,7 +12,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="styles/bootstrap-social.css">
-<link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <title>Al Forno Pizzeria</title>
@@ -62,6 +61,9 @@ ul{
     display: block;
     padding-bottom: 5px;
   }
+  .top-head-after{
+    padding-top: 25px;
+  }
     
 
   }
@@ -77,6 +79,9 @@ ul{
 }
 .navbar a{
   font-size: 1.1em;
+}
+.navbar-toggle{
+  float:left;
 }
 .navbar-default {
     background-color: white;
@@ -262,22 +267,35 @@ th{
   text-align: center !important;
   color: white;
 }
-.nametag{
-  display: inline;
+.nametag-before{
+  display: none;
   text-align: left;
-  font-family: 'Brush Script MT';
+  font-family: 'Brush Script MT', cursive;
   color: white;
+  opacity: 0;
+}
+.nametag-after{
+opacity: 1 !important;
+display:inline;
 }
 
     </style>
 
     <script type="text/javascript" charset="utf-8" >
 $(document).scroll(function () {
+
+  var headerName = $("#header-name");
+  var topHeader = $("#top-header");
+
     var y = $(this).scrollTop();
     if (y > 250) {
-        $('.nametag').fadeIn();
+        //$('.nametag').fadeIn();
+        headerName.addClass("nametag-after");
+       topHeader.addClass("top-head-after");
     } else {
-        $('.nametag').fadeOut();
+       // $('.nametag').fadeOut();
+       headerName.removeClass("nametag-after");
+        topHeader.removeClass("top-head-after");
     }
 
 });
@@ -306,9 +324,9 @@ $(function() {
       
     
 
-    <div class="row top-head">
+    <div class="row top-head" id="top-header">
       <div class="col-xs-12 col-lg-4 text-center">
-        <h1 class="nametag">Al Forno Pizzeria</h1>
+        <h1 class="nametag-before" id="header-name">Al Forno Pizzeria</h1>
       </div>
       <div class="col-xs-12 col-lg-2 text-center">
         
@@ -370,7 +388,6 @@ $(function() {
                   <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#menu-alforno">Menu</a></li>
-                    <li><a href="#">About</a></li>
                     <li><a href="#footer-info">Contact</a></li>
                     <li><a href="#">Order Online</a></li>
                   </ul>
