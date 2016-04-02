@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,595 +8,490 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="styles/bootstrap-social.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/bootstrap-social.css">
+    <link href='https://fonts.googleapis.com/css?family=Dynalight' rel='stylesheet' type='text/css'>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <title>Al Forno Pizzeria</title>
-
     <!-- Custom styles for this template -->
     <style type="text/css" media="screen">
-      /* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-html {
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+    html {
     margin:0;
     padding:0;
-}
-body {
-      margin:0;
+    }
+    body {
+    margin:0;
     padding:0;
-  /*color: #5a5a5a;*/
-}
-.top-head{
-  background-color: #9E0021;
-  position: fixed;
-  z-index: 100000; 
-  width: 100%;
-
-}
-.top-info{
-  padding: 0px 5px;
-  padding-top: 10px;
-  color: white;
-  font-size: 1.1em;
-}
-.top-info p, a, ul>li{
-  display: inline-block;
-  color: white;
-}
-.top-info-social{
-  text-align: center;
-  display: inline;
-}
-ul{
-  -webkit-padding-start: 10px;
-}
-@media only screen and (max-width: 767px)
- {
-  .top-info{
+    width: 100%;
+    /*color: #5a5a5a;*/
+    }
+    .top-head{
+    background-color: #9E0021;
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+    }
+    .top-info{
+    padding: 0px 5px;
+    padding-top: 10px;
+    color: white;
+    font-size: 1.1em;
+    }
+    .top-info p, a, ul>li{
+    display: inline-block;
+    color: white;
+    }
+    .top-info-social{
+    text-align: center;
+    display: inline;
+    }
+    ul{
+    -webkit-padding-start: 10px;
+    }
+    @media only screen and (max-width: 767px)
+    {
+    .top-info{
     text-align: center;
     display: block;
     padding-bottom: 5px;
-  }
-  .top-head-after{
+    }
+    .top-head-after{
     padding-top: 25px;
-  }
+    }
     
-
-  }
-#header{
-  text-align: center;
-  padding-top: 70px;
-}
-#logo{
-  padding: 10px 0 8px;
-}
-.navbar{
-  background: none;
-}
-.navbar a{
-  font-size: 1.1em;
-}
-.navbar-toggle{
-  float:left;
-}
-.navbar-default {
+    }
+    #header{
+    text-align: center;
+    padding-top: 70px;
+    }
+    #logo{
+    padding: 10px 0 8px;
+    }
+    .navbar{
+    background: none;
+    }
+    .navbar a{
+    font-size: 1.1em;
+    }
+    .navbar-toggle{
+    float:left;
+    }
+    .navbar-default {
     background-color: white;
     border-color: white;
-}
- .navbar-default .navbar-nav > .active{
+    }
+    .navbar-default .navbar-nav > .active{
     color: #9E0021;
-   background: #9E0021;
- }
- .navbar-default .navbar-nav > .active > a, 
- .navbar-default .navbar-nav > .active > a:hover, 
- .navbar-default .navbar-nav > .active > a:focus {
-      color: #9E0021;
-      background: white;
- }
- .container-fluid>.navbar-header{
-  margin-left: 0px;
- }
- @media (min-width: 768px) {
+    background: #9E0021;
+    }
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+    color: #9E0021;
+    background: white;
+    }
+    .container-fluid>.navbar-header{
+    margin-left: 0px;
+    }
+    @media (min-width: 768px) {
     .navbar .navbar-nav {
-        display: inline-block;
-        float: none;
-        vertical-align: top;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
     }
-
     .navbar .navbar-collapse {
-        text-align: center;
+    text-align: center;
     }
-}
-
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-/*.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;              makes navbar inside carousel
-}*/
-
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper > .container {
-  padding-right: 0;
-  padding-left: 0;
-}
-.navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.navbar-wrapper .navbar .container {
-  width: auto;
-}
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  height: 500px;
-  margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 500px;
-  background-color: #777;
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
-}
-
-.right.carousel-control, .left.carousel-control {
-    display: none;
-}
-.carousel h1{
-  text-shadow: 2px 2px black;
-}
-.carousel p{
-  text-shadow: 1px 1px black;
-}
-
-
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-table{
- margin: 0px 20px; 
- width: 100%;
- table-layout: auto;
-}
-td{
-  padding: 10px;
-  width: 100%;
-}
-th{
-  width:100%;
-}
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
-  .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  .navbar-wrapper .navbar {
+    }
+    /* CUSTOMIZE THE NAVBAR
+    -------------------------------------------------- */
+    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    /*.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;              makes navbar inside carousel
+    }*/
+    /* Flip around the padding for proper display in narrow viewports */
+    .navbar-wrapper > .container {
     padding-right: 0;
     padding-left: 0;
-  }
-
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
+    }
+    .navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+    .navbar-wrapper .navbar .container {
+    width: auto;
+    }
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+    /* Carousel base class */
+    .carousel {
+    height: 500px;
+    margin-bottom: 60px;
+    }
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+    z-index: 10;
+    }
+    /* Declare heights because of positioning of img element */
+    .carousel .item {
+    height: 500px;
+    background-color: #777;
+    }
+    .carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+    }
+    .right.carousel-control, .left.carousel-control {
+    display: none;
+    }
+    .carousel h1{
+    text-shadow: 2px 2px black;
+    }
+    .carousel p{
+    text-shadow: 1px 1px black;
+    }
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+    /* Center align the text within the three columns below the carousel */
+    .marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+    }
+    .marketing h2 {
+    font-weight: normal;
+    }
+    .marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+    }
+    /* Featurettes
+    ------------------------- */
+    .featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    /* Thin out the marketing headings */
+    .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+    }
+    table{
+    margin: 0px 0px;
+    width: 100%;
+    table-layout: auto;
+    }
+    td{
+    padding: 10px;
+    width: 100%;
+    }
+    th{
+    width:100%;
+    }
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+    @media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+    margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+    }
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
     border-radius: 4px;
-  }
-
-  /* Bump up size of carousel content */
-  .carousel-caption p {
+    }
+    /* Bump up size of carousel content */
+    .carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4;
-  }
-
-  .featurette-heading {
+    }
+    .featurette-heading {
     font-size: 50px;
-  }
-}
-
-@media (min-width: 992px) {
-  .featurette-heading {
+    }
+    }
+    @media (min-width: 992px) {
+    .featurette-heading {
     margin-top: 120px;
-  }
-}
-#footer-bottom{
-  padding:30px 10px;
-  background-color: #9E0021;
-}
-#footer-info{
-  text-align: center !important;
-  color: white;
-}
-.nametag-before{
-  display: none;
-  text-align: left;
-  font-family: 'Brush Script MT', cursive;
-  color: white;
-  opacity: 0;
-}
-.nametag-after{
-opacity: 1 !important;
-display:inline;
-}
-
+    }
+    }
+    #footer-bottom{
+    padding:30px 10px;
+    background-color: #9E0021;
+    }
+    #footer-info{
+    text-align: center !important;
+    color: white;
+    }
+    .nametag-before{
+    display: none;
+    text-align: left;
+    font-family: 'Brush Script MT';
+    color: white;
+    opacity: 0;
+    }
+    .nametag-after{
+    opacity: 1 !important;
+    display:inline;
+    }
     </style>
-
     <script type="text/javascript" charset="utf-8" >
-$(document).scroll(function () {
-
-  var headerName = $("#header-name");
-  var topHeader = $("#top-header");
-
+    $(document).scroll(function () {
+    var headerName = $("#header-name");
+    var topHeader = $("#top-header");
     var y = $(this).scrollTop();
     if (y > 250) {
-        //$('.nametag').fadeIn();
-        headerName.addClass("nametag-after");
-       topHeader.addClass("top-head-after");
+    $('.nametag').fadeIn();
+    headerName.addClass("nametag-after");
+    topHeader.addClass("top-head-after");
     } else {
-       // $('.nametag').fadeOut();
-       headerName.removeClass("nametag-after");
-        topHeader.removeClass("top-head-after");
+    // $('.nametag').fadeOut();
+    headerName.removeClass("nametag-after");
+    topHeader.removeClass("top-head-after");
     }
-
-});
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
+    });
+    $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+    $('html, body').animate({
+    scrollTop: target.offset().top
+    }, 1000);
+    return false;
     }
-  });
-});
-
-
+    }
+    });
+    });
     </script>
-
   </head>
-
   <body>
     <div class="container-fluid">
       
-    
-
-    <div class="row top-head" id="top-header">
-      <div class="col-xs-12 col-lg-4 text-center">
-        <h1 class="nametag-before" id="header-name">Al Forno Pizzeria</h1>
-      </div>
-      <div class="col-xs-12 col-lg-2 text-center">
-        
-      </div>
-      <div class="col-xs-12 col-lg-6 text-center">
-
-            <div class="top-info">
-            
-
-          <p><span class="fa fa-phone-square fa-lg"></span> (212) 249-5103</p>
-          <p><span class="fa fa-envelope fa-lg"></span> alforno@email.com</p>
-          
-          <ul class="top-info-social">
-            <li><a href="https://www.facebook.com/Al-Forno-Pizzeria-10150112524970473/?ref=br_tf">
-          <span class="fa fa-facebook-square fa-lg"></span>
-          </a></li>
-          <li><a href="https://plus.google.com/+AlFornoPizzeriaNewYork">
-           <span class="fa fa-google-plus-square fa-lg"></span>
-          </a></li>
-          </ul>
-
-          </div>
-      </div>
       
-    </div> 
-
-      </div>
-
-
-    </div> <!-- end top head -->
-
+      <div class="row top-head" id="top-header">
+        <div class="col-xs-12 col-lg-4 text-center">
+          <h1 class="nametag-before" id="header-name">Al Forno Pizzeria</h1>
+        </div>
+        <div class="col-xs-12 col-lg-2 text-center">
+          
+        </div>
+        <div class="col-xs-12 col-lg-6 text-center">
+          <div class="top-info">
+            
+            <p><span class="fa fa-phone fa-fw"></span> (212) 249-5103</p>
+            <p><span class="fa fa-envelope-o fa-fw"></span> info@alfornopizzeria77.com</p>
+            
+            <ul class="top-info-social">
+              <li><a href="https://www.facebook.com/Al-Forno-Pizzeria-10150112524970473/?ref=br_tf">
+                <span class="fa fa-facebook-square fa-fw"></span>
+              </a></li>
+              <li><a href="https://plus.google.com/+AlFornoPizzeriaNewYork">
+                <span class="fa fa-google-plus-square fa-fw"></span>
+              </a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div> <!-- end top head -->
+    
+    
     <div id="header" class="">
       <div class="container clearfix">
         <img src="img/logof2.png" alt="logo" id="logo">
       </div>
-
-
-
-
-
-
-    <!-- NAVBAR
-================================================== -->
-
-    <div class="navbar-wrapper">
-      <div class="container">
-
-            <nav class="navbar navbar-default">
-              <div class="container">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                 
-                  </button>
-                 
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#menu-alforno">Menu</a></li>
-                    <li><a href="#footer-info">Contact</a></li>
-                    <li><a href="#">Order Online</a></li>
-                  </ul>
-
-                </div>
+      <!-- NAVBAR
+      ================================================== -->
+      <div class="navbar-wrapper">
+        <div class="container">
+          <nav class="navbar navbar-default">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                
               </div>
-            </nav>
-
-
-      </div>
-    </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#menu-alforno">Menu</a></li>
+                  <li><a href="#footer-info">Contact</a></li>
+                  <li><a href="#">Order Online</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div><!--  end navbar div -->
       
-    </div><!-- /header -->
-
-
-   
-
-
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-                  <div class="carousel-inner">
-                <div class="item active">
-                    <img src="img/oven.jpg" class="img-responsive">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Authentic wood-burning brick oven</h1>
-                            <p>Small details here</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="img/bar2.jpg" class="img-responsive">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Pasta</h1>
-                            <p>Details Here</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="img/dishes.jpg" class="img-responsive">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>A variety of pasta dishes</h1>
-                            <p>Small details here</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="img/pastawine.jpg" class="img-responsive">
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Pasta and Wine</h1>
-                            <p>Small details here</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-<!--       <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div> -->
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
-
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/pizza.jpg" alt="Generic placeholder image" width="240" height="240">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/pasta.jpg" alt="Generic placeholder image" width="240" height="240">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/inside.jpg" alt="Generic placeholder image" width="240" height="240">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider" id="menu-alforno">
-
-
-      <div class="container" >
-        <table>
-          <th colspan="3" class="text-center"style="color: #9E0021;"><h2>Pizza</h2></th>
-          <tr>
-            <td></td>
-            <td style="color: #9E0021;">Small</td>    
-            <td style="color: #9E0021;">Large</td>
-          </tr>
-          <tr>
-            <td><strong>Pizza Pie </strong><br><i>With Fresh Homemade Mozzarella, Fresh Tomato Sauce and Basil</i></td>
-            <td>13.50</td>    
-            <td>18.00</td>
-          </tr>
-          <tr>
-            <td><strong>White Pie </strong><br><i>Choice of Ricotta or Mozzarella</i></td>
-            <td>15.50</td>    
-            <td>19.50</td>
-          </tr>
-          <tr>
-            <td><strong>Whole Wheat Pie </strong><br><i>With Fresh Homemade Mozzarella, Fresh Tomato Sauce and Basil</i></td>
-            <td>15.00</td>    
-            <td></td>
-          </tr>
-          <tr>
-            <td colspan="3"><p class="text-center"><strong>Pizza Toppings </strong><br>
-                *2.00 **2.50 ***3.00 ****3.50 – half or whole pie <br>
-                Fresh Mushrooms* Sweet Sausage* Pepperoni* Spinach* Kalamata Olives* Onions* Fresh Broccoli*<br>
-                 Fresh Tomatoes* Sun-dried Tomatoes* Fresh Mixed Roasted Peppers* Fresh Garlic* Ricotta**<br>
-                 Fresh Mozzarella** Grilled Eggplant** Artichokes*** Prosciutto**** Grilled Chicken**** Meatballs****</p></td>
-          </tr>
-          <th colspan="3" class="text-center"style="color: #9E0021;"><h2>Calzone</h2></th>
-          <tr>
-            <td><strong>10" CALZONE with Ricotta and Mozzarella</strong><br><i>Additional Fillling(choose from pizza toppings)</i></td>
-            <td>16.00</td>  
-            <td></td>  
-
-          </tr>
-
-        </table>
-
-      </div> <!-- End menu div -->
-
-      <hr class="featurette-divider">
-      <div class="container-fluid">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24172.064709114366!2d-73.9560039!3d40.7728428!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258bf12c9522d%3A0xe1bb60cabbaf1276!2sAl+Forno+Pizzeria!5e0!3m2!1sen!2shk!4v1425313407292" width="100%" height="400" frameborder="0" style="border:0"></iframe>
-
-      </div>
+      </div><!-- /header -->
       
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <!-- <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer> -->
-      <footer id="main-footer">
-        
-        <div id="footer-bottom">
-  
-            <p id="footer-info" style="padding-top: 15px; line-height:1.2em;"><strong style="font-size:1.3em;">Al Forno Pizzeria<p id="footer-info" style="line-height:1.6em;"><br />1484 Second Avenue<br />New York, NY 10075</p><p id="footer-info" style="line-height:1.6em;">(212) 249-5103 / 5702<br /><p id="footer-info" style="line-height:2em;"><p id="footer-info">Sun-Thurs : 12pm-11pm <br> Fri-Sat: 12pm-12am</p><br>
-
-          <p id="footer-info" style="line-height:2em;">&copy; 2016 | All rights reserved</p>
-          <p class="pull-right"><a href="#"><i class="fa fa-arrow-up fa-lg"></i></a></p>
+      <!-- Carousel
+      ================================================== -->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/oven.jpg" class="img-responsive">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Authentic wood-burning brick oven</h1>
+                <p>Small details here</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/bar2.jpg" class="img-responsive">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Pasta</h1>
+                <p>Details Here</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/dishes.jpg" class="img-responsive">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>A variety of pasta dishes</h1>
+                <p>Small details here</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/pastawine.jpg" class="img-responsive">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Pasta and Wine</h1>
+                <p>Small details here</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </footer> <!-- #main-footer -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        </div><!-- /.carousel -->
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+        <div class="marketing">
+          <!-- Three columns of text below the carousel -->
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="img-circle" src="img/pizza.jpg" alt="Generic placeholder image" width="240" height="240">
+              <h2>Heading</h2>
+              <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="img-circle" src="img/pasta.jpg" alt="Generic placeholder image" width="240" height="240">
+                <h2>Heading</h2>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <img class="img-circle" src="img/inside.jpg" alt="Generic placeholder image" width="240" height="240">
+                  <h2>Heading</h2>
+                  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                  
+                  </div><!-- /.col-lg-4 -->
+                  </div><!-- /.row -->
+                  <!-- START THE FEATURETTES -->
+                  <hr class="featurette-divider" id="menu-alforno">
+                  <div class="container" >
+                    <table>
+                      <th colspan="3" class="text-center"style="color: #9E0021;"><h2>Pizza</h2></th>
+                      <tr>
+                        <td></td>
+                        <td style="color: #9E0021;">Small</td>
+                        <td style="color: #9E0021;">Large</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Pizza Pie </strong><br><i>With Fresh Homemade Mozzarella, Fresh Tomato Sauce and Basil</i></td>
+                        <td>13.50</td>
+                        <td>18.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>White Pie </strong><br><i>Choice of Ricotta or Mozzarella</i></td>
+                        <td>15.50</td>
+                        <td>19.50</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Whole Wheat Pie </strong><br><i>With Fresh Homemade Mozzarella, Fresh Tomato Sauce and Basil</i></td>
+                        <td>15.00</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td colspan="3"><p class="text-center"><strong>Pizza Toppings </strong><br>
+                          *2.00 **2.50 ***3.00 ****3.50 – half or whole pie <br>
+                          Fresh Mushrooms* Sweet Sausage* Pepperoni* Spinach* Kalamata Olives* Onions* Fresh Broccoli*<br>
+                          Fresh Tomatoes* Sun-dried Tomatoes* Fresh Mixed Roasted Peppers* Fresh Garlic* Ricotta**<br>
+                        Fresh Mozzarella** Grilled Eggplant** Artichokes*** Prosciutto**** Grilled Chicken**** Meatballs****</p></td>
+                      </tr>
+                      <th colspan="3" class="text-center"style="color: #9E0021;"><h2>Calzone</h2></th>
+                      <tr>
+                        <td><strong>10" CALZONE with Ricotta and Mozzarella</strong><br><i>Additional Fillling(choose from pizza toppings)</i></td>
+                        <td>16.00</td>
+                        <td></td>
+                      </tr>
+                    </table>
+                    </div> <!-- End menu div -->
+                    <hr class="featurette-divider">
+                    <div class="container-fluid">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24172.064709114366!2d-73.9560039!3d40.7728428!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258bf12c9522d%3A0xe1bb60cabbaf1276!2sAl+Forno+Pizzeria!5e0!3m2!1sen!2shk!4v1425313407292" width="100%" height="400" frameborder="0" style="border:0"></iframe>
+                    </div>
+                  </div>
+                  
+                  <!-- /END THE FEATURETTES -->
 
-</div>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                </div> <!-- end container-fluid after body -->
 
-  </body>
-</html>
+                  <!-- FOOTER -->
+                  <footer id="main-footer">
+                    
+                    <div id="footer-bottom">
+                      <p id="footer-info" style="padding-top: 15px; line-height:1.2em;">
+                        <strong style="font-size:1.3em;">Al Forno Pizzeria</strong>
+                          <p id="footer-info" style="line-height:1.6em; font-size: 1.1em;">
+                            <br>1484 Second Avenue<br>New York, NY 10075 <br>
+                            (212) 249-5103 / 5702<br><br>
+                                Sun-Thurs: 12pm-11pm <br> 
+                                Fri-Sat: 12pm-12am</p>
+                                <br>
+
+                      <p id="footer-info" style="line-height:2em;">&copy; 2016 | All rights reserved</p>
+                      <p class="pull-right"><a href="#"><i class="fa fa-arrow-up fa-lg"></i></a></p>
+                    </div> <!-- end footer-bottom -->
+
+                    </footer> <!-- #main-footer -->
+
+      
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+              </body>
+            </html>
