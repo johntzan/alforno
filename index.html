@@ -34,10 +34,11 @@
     position: fixed;
     z-index: 100000;
     width: 100%;
+    box-shadow: 1px 1px 5px #000;
     }
     .top-info{
     padding: 0px 5px;
-    padding-top: 10px;
+    padding-top: 15px;
     color: white;
     font-size: 1.1em;
     }
@@ -60,16 +61,20 @@
     padding-bottom: 5px;
     }
     .top-head-after{
-    padding-top: 25px;
+    /*padding-top: 25px;*/
     }
-    
+
+    }
+     #header-name{
+      width: 180px;
+      height: 50px;
     }
     #header{
     text-align: center;
     padding-top: 70px;
     }
     #logo{
-    padding: 10px 0 8px;
+    padding: 20px 0 8px;
     }
     .navbar{
     background: none;
@@ -171,7 +176,7 @@
     /* Featurettes
     ------------------------- */
     .featurette-divider {
-    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    margin: 60px 0; /* Space out the Bootstrap <hr> more */
     }
     /* Thin out the marketing headings */
     .featurette-heading {
@@ -243,6 +248,7 @@
     display:inline;
     margin-bottom: -10px;
     }
+
     </style>
     <script type="text/javascript" charset="utf-8" >
     $(document).scroll(function () {
@@ -281,7 +287,7 @@
       
       <div class="row top-head" id="top-header">
         <div class="col-xs-12 col-lg-4 text-center">
-          <img class="nametag-before" src="pictures/logo2.png" id="header-name"></img>
+          <img class="nametag-before" src="pictures/logobig.png" id="header-name"></img>
         </div>
         <div class="col-xs-12 col-lg-2 text-center">
           
@@ -307,9 +313,8 @@
     
     
     <div id="header" class="">
-      <div class="container clearfix">
+
         <img src="pictures/logof2.png" alt="logo" id="logo">
-      </div>
       <!-- NAVBAR
       ================================================== -->
       <div class="navbar-wrapper">
@@ -406,7 +411,7 @@
               </div><!-- /.col-lg-4 -->
               <div class="col-lg-3  text-center">
                 <img class="img-circle" src="pictures/chickpicc2.jpg" alt="Chicken Piccata" width="240" height="240">
-                <h3>Chicken Piccatta</h3>
+                <h3>Chicken Piccata</h3>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-3 text-center">
                   <img class="img-circle" src="pictures/tiramisu2edit.png" alt="Tiramisu" width="240" height="240">
@@ -417,8 +422,14 @@
                   </div><!-- /.row -->
                   </div>
                   <!-- START THE FEATURETTES -->
-                  <hr class="featurette-divider" id="menu-alforno">
+                  
                   <div class="container" >
+
+
+                      <hr class="featurette-divider" id="menu-alforno">
+                    <h1 class="text-center">Menu</h1>
+                    <hr class="featurette-divider" id="menu-alforno">
+                    
                     <table>
                       <th colspan="3" class="text-center"style="color: #9E0021;"><h2>Pizza</h2></th>
                       <tr>
@@ -454,8 +465,102 @@
                         <td>16.00</td>
                         <td></td>
                       </tr>
+                       <th colspan="3" class="text-center"style="color: #9E0021;"><h2>Appetizers</h2></th>
+                      <tr>
+                        <td></td>
+                        <td style="color: #9E0021;">Individual</td>
+                        <td style="color: #9E0021;">Family(3)</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Mozzarella Fresca</strong><br><i>Fresh homemade mozzarella, vine ripened tomatoes, roasted red peppers,
+red onions, fresh basil and extra virgin olive oil</i></td>
+                        <td>10.00</td>
+                        <td>19.95</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Cold Antipasto</strong><br><i>Fresh homemade mozzarella, prosciutto, mortadella, fresh tomatoes,
+roasted red peppers, artichokes and extra virgin olive oil</i></td>
+                        <td>11.00</td>
+                        <td>21.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Eggplant Rollatini</strong><br><i>Prepared with spinach, ricotta, sun-dried tomatoes and topped with
+melted mozzarella and tomato sauce</i></td>
+                        <td>9.00</td>
+                        <td>19.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Mussels</strong><br><i>Choice of marinara sauce, white wine lemon & garlic sauce or fra diavolo
+</i></td>
+                        <td>9.00</td>
+                        <td>19.00</td>
+                      </tr>
+                      <th colspan="3" class="text-center"style="color: #9E0021;"><h2>Salads</h2></th>
+                      <tr>
+                        <td></td>
+                        <td style="color: #9E0021;">Individual</td>
+                        <td style="color: #9E0021;">Family(3)</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Insalata Mista</strong><br><i>Mixed greens, carrots and tomatoes with homemade Italian dressing
+</i></td>
+                        <td>9.50</td>
+                        <td>20.50</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Caesar Salad</strong><br><i>Romaine lettuce with homemade Caesar dressing and shaved parmesan cheese</i></td>
+                        <td>9.50</td>
+                        <td>20.50</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Insalata Al Forno</strong><br><i>Arugula, endive, radicchio, sun-dried tomatoes with homemade honey vinaigrette
+dressing and shaved parmesan cheese
+</i></td>
+                        <td>9.50</td>
+                        <td>20.50</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Insalata Di Napoli</strong><br><i>Mesclun, endive, sun-dried tomatoes, fresh peppers, fresh tomatoes,
+walnuts and red onions with homemade Dijon mustard vinaigrette dressing</i></td>
+                        <td>10.00</td>
+                        <td>21.00</td>
+                      </tr>
+                        <tr>
+                        <td><strong>Insalata Portobello</strong><br><i>Sliced Portobello mushrooms, arugula, sun-dried tomatoes, roasted peppers, fresh
+mozzarella with balsamic vinaigrette dressing</i></td>
+                        <td>11.00</td>
+                        <td>22.00</td>
+                      </tr>
+                       <tr>
+                        <td><strong>Insalata Siciliana</strong><br><i>Mixed greens, mozzarella, roasted peppers, black olives, caper,
+anchovies, artichokes, carrots, tomatoes with homemade Italian dressing</i></td>
+                        <td>12.00</td>
+                        <td>23.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Any Salad with Grilled Chicken, additional</strong></td>
+                        <td>4.00</td>
+                        <td>7.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Any Salad with Grilled Shrimp, additional</strong></td>
+                        <td>5.00</td>
+                        <td>10.00</td>
+                      </tr>
+                      <th colspan="3" class="text-center"style="color: #9E0021;"><h2>Soups</h2></th>
+                      <tr>
+                        <td><strong>Pasta e Fagioli (with pancetta) * Chicken Noodle * Soup of the Day</strong></td>
+                        <td>5.25</td>
+                        <td></td>
+                      </tr>
+
+
+
                     </table>
+
                     </div> <!-- End menu div -->
+
+
                     <hr class="featurette-divider">
                     <div class="container-fluid">
                       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24172.064709114366!2d-73.9560039!3d40.7728428!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258bf12c9522d%3A0xe1bb60cabbaf1276!2sAl+Forno+Pizzeria!5e0!3m2!1sen!2shk!4v1425313407292" width="100%" height="400" frameborder="0" style="border:0;"></iframe>
