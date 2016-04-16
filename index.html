@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Al Forno Pizzeria & Restaurant">
+    <meta name="author" content="Al Forno Pizzeria">
+    <link rel="icon" type="image/x-icon" href="pictures/favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/bootstrap-social.css">
-    <link href='https://fonts.googleapis.com/css?family=Dynalight' rel='stylesheet' type='text/css'>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <title>Al Forno Pizzeria</title>
     <!-- Custom styles for this template -->
@@ -184,16 +184,27 @@
     line-height: 1;
     letter-spacing: -1px;
     }
-    table{
+    .mainMenuTable{
     margin: 0px 0px;
     width: 100%;
     table-layout: auto;
     }
-    td{
-    padding: 10px;
+    .mainMenuTable td{
+    padding: 4px;
     width: 100%;
     }
-    th{
+    .mainMenuTable th{
+    width:100%;
+    }
+    .entreeMenuTable{
+    margin: 0px 0px;
+    width: 100%;
+    table-layout: auto;
+    }
+    .entreeMenuTable td{
+    padding: 2px;
+    }
+    .entreeMenuTable th{
     width:100%;
     }
     /* RESPONSIVE CSS
@@ -334,7 +345,7 @@
                   <li class="active"><a href="#">Home</a></li>
                   <li><a href="#menu-alforno">Menu</a></li>
                   <li><a href="#footer-info">Contact</a></li>
-                  <li><a href="http://www.simplemenu.com/menus/alfornopizza">Order Online</a></li>
+                  <li><a target="_blank" href="http://www.simplemenu.com/menus/alfornopizza">Order Online</a></li>
                 </ul>
               </div>
             </div>
@@ -430,7 +441,7 @@
                     <h1 class="text-center">Menu</h1>
                     <hr class="featurette-divider" id="menu-alforno">
                     
-                    <table>
+                    <table class="mainMenuTable">
                       <th colspan="3" class="text-center"style="color: #9E0021;"><h2>Pizza</h2></th>
                       <tr>
                         <td></td>
@@ -549,13 +560,183 @@ anchovies, artichokes, carrots, tomatoes with homemade Italian dressing</i></td>
                       </tr>
                       <th colspan="3" class="text-center"style="color: #9E0021;"><h2>Soups</h2></th>
                       <tr>
-                        <td><strong>Pasta e Fagioli (with pancetta) * Chicken Noodle * Soup of the Day</strong></td>
+                        <td><strong>Pasta e Fagioli (with pancetta) &#8226; Chicken Noodle &#8226; Soup of the Day</strong></td>
                         <td>5.25</td>
                         <td></td>
                       </tr>
+                      <th colspan="3" class="text-center"style="color: #9E0021;"><h2>Pasta</h2><br><p style="color: black;"><i>Whole wheat spaghetti available - additional $2.00</i></p></th>
+
+                      <tr>
+                        <td><strong>Spaghetti Pomodoro</strong><br><i>Spaghetti with fresh plum tomato sauce and basil</i></td>
+                        <td>11.50</td>
+                        <td>26.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Penne Alla Salmone</strong><br><i>Penne with salmon, broccoli rabe and fresh tomatoes sautéed in oil and garlic
+</i></td>
+                        <td>16.50</td>
+                        <td>37.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Rigatoni Bolognese</strong><br><i>Rigatoni with homemade meat sauce with a touch of cream</i></td>
+                        <td>14.50</td>
+                        <td>34.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Penne Alla Vodka</strong><br><i>Penne with tomato sauce, a touch of cream, pancetta and vodka
+</i></td>
+                        <td>13.50</td>
+                        <td>33.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Spaghetti e Pollo Cacciatore</strong><br><i>Spaghetti with peppers, onions, mushrooms, sliced chicken and olive oil in a light tomato sauce</i></td>
+                        <td>15.50</td>
+                        <td>36.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Fettuccine Alfredo e Pollo</strong><br><i>Fettuccine with alfredo sauce, aged parmigiano and sliced chicken
+</i></td>
+                        <td>15.50</td>
+                        <td>36.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Penne Al Forno</strong><br><i>Penne with broccoli florets, sliced chicken in a light garlic and olive oil sauce</i></td>
+                        <td>15.50</td>
+                        <td>36.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Spaghetti and Meatballs</strong><br><i>Spaghetti and homemade meatballs topped with pomodoro sauce</i></td>
+                        <td>15.50</td>
+                        <td>36.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Linguine Vongole</strong><br><i>Linguine with clams, artichokes and fresh tomatoes in a spicy tomato sauce</i></td>
+                        <td>15.95</td>
+                        <td>36.50</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Ravioli (Spinach or Cheese)</strong><br><i>Homemade ravioli in a pink sauce topped with fresh mozzarella
+</i></td>
+                        <td>14.50</td>
+                        <td>33.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Rigatoni Country Style Pasta</strong><br><i>Rigatoni with spicy Italian sausage, broccoli rabe, beans and onions sautéed in olive oil and garlic
+</i></td>
+                        <td>15.95</td>
+                        <td>36.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Lobster Ravioli</strong><br><i>Homemade lobster ravioli in a pink sauce
+</i></td>
+                        <td>16.95</td>
+                        <td>37.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Penne Marsala</strong><br><i>Penne with sliced chicken, broccoli rabe, mushrooms, olives, and onions in a marsala wine sauce
+</i></td>
+                        <td>15.95</td>
+                        <td>36.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Farfalle Primavera</strong><br><i>Bowtie pasta with fresh garden vegetables, olive oil & garlic
+</i></td>
+                        <td>14.50</td>
+                        <td>34.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Pappardella All Toscana</strong><br><i>Wide ribbon pasta w/sundried tomatoes, mushrooms, white wine, aged parmigiano and pecorino cheese in a cream sauce
+</i></td>
+                        <td>15.50</td>
+                        <td>36.00</td>
+                      </tr>
+
+                      <tr>
+                        <td><strong>Capellini Siciliana</strong><br><i>Angel hair pasta with shrimps sautéed in white wine, olive oil & garlic
+</i></td>
+                        <td>15.95</td>
+                        <td>36.00</td>
+                      </tr><tr>
+                        <td><strong>Linguine Fra Diavolo Al Fruitti Di Mare</strong><br><i>Linguine with mixed seafood, fresh spicy tomato sauce and basil</i></td>
+                        <td>16.95</td>
+                        <td>37.00</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Homemade Lasagna</strong><br><i>with ground meat and ricotta</i></td>
+                        <td>15.00</td>
+                        <td></td>
+                      </tr>
+
+                    </table>
+
+                    <table class="entreeMenuTable">
+
+                      <tbody>
+                        <th colspan="4" class="text-center"style="color: #9E0021;"><h2>Entrees</h2> <p style="color: black;"><i>Served with mixed vegetables and choice of pasta with pomodoro sauce</i></p></th>
+                        <tr>
+                          <td colspan="4" >
+                            <p class="text-center">Eggplant Parmigiana(served only with pasta) &#8226; 14.95 
+                              <br>Chicken Parmigiana &#8226; 16.50 
+                              <br>Veal Parmigiana &#8226; 19.00
+                              <br>Chicken  Piccata  &#8226; 16.50
+                              <br>Veal Marsala &#8226; 19.00
+                              <br>Chicken Marsala &#8226; 16.50
+                              <br>Shrimp Marinara &#8226; 18.00 
+                              <br>Chicken Francese &#8226; 16.50 
+                              <br>Shrimp Fra Diavolo &#8226; 18.00 
+                              <br>Chicken Fra Diavolo &#8226; 16.55 
+                              <br>Grilled Salmon(served only with broccoli rabe) &#8226; 18.00
+
+                            </p>
 
 
-
+                          </td>
+                        </tr>
+                        <!-- <tr>
+                        <td width="35%"><strong>Eggplant Parmigiana</strong>(served only with pasta)</td>
+                        <td width="15%">14.95</td>
+                        <td width="35%"><strong>Veal Parmigiana</strong></td>
+                        <td width="15%">19.00</td>
+                      </tr>
+                      <tr>
+                        <td width="35%"><strong>Chicken Parmigiana</strong></td>
+                        <td width="15%">16.50</td>
+                        <td width="35%"><strong>Veal Piccata</strong></td>
+                        <td width="15%">19.00</td>
+                      </tr>
+                      <tr>
+                        <td width="35%"><strong>Chicken Piccata</strong></td>
+                        <td width="15%">16.50</td>
+                        <td width="35%"><strong>Veal Marsala</strong></td>
+                        <td width="15%">19.00</td>
+                      </tr>
+                      <tr>
+                        <td width="35%"><strong>Chicken Marsala</strong></td>
+                        <td width="15%">16.50</td>
+                        <td width="35%"><strong>Shrimp Marinara</strong></td>
+                        <td width="15%">18.00</td>
+                      </tr>
+                      <tr>
+                        <td width="35%"><strong>Chicken Francese</strong></td>
+                        <td width="15%">16.50</td>
+                        <td width="35%"><strong>Shrimp Fra Diavolo</strong></td>
+                        <td width="15%">18.00</td>
+                      </tr>
+                      <tr>
+                        <td width="35%"><strong>Chicken Fra Diavolo</strong></td>
+                        <td width="15%">16.55</td>
+                        <td width="35%"><strong>Grilled Salmon</strong>(served only with broccoli rabe)</td>
+                        <td width="15%">18.00</td>
+                      </tr> -->
+                      <th colspan="4" class="text-center"style="color: #9E0021;"><h2>Beverages</h2></th>
+                        <tr>
+                          
+                        <td colspan="4"><p class="text-center">
+                          Soda 2.00 Coffee/Tea 2.00 Espresso 3.75 Double Espresso 4.75 Cappuccino 4.75 Iced Capp. 4.75 <br>
+                          Lurisia Mineral or Sparkling Mineral Bottled Water, Lrg 5.00 <br>
+                          Apple Juice / Orange Juice / Cranberry Juice 3.50</p></td>
+                      </tr>
+                      </tbody>
                     </table>
 
                     </div> <!-- End menu div -->
