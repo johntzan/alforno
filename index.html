@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Al Forno Pizzeria & Restaurant">
     <meta name="author" content="Al Forno Pizzeria">
@@ -15,6 +15,32 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <title>Al Forno Pizzeria</title>
+
+    <style type="text/css">
+
+    #special{
+      display: block;
+      width: 100%; 
+      height: 100%;
+    }
+    .bs-modal-lg{
+      padding-top: 100px;
+    }
+    .modal-caption {
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 5px 0 5px 0;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+    </style>
 
     <script type="text/javascript" charset="utf-8" >
     $(document).scroll(function () {
@@ -47,6 +73,12 @@
     });
     </script>
 
+    <script type="text/javascript">
+    $(window).load(function(){
+        $('.bs-modal-lg').modal('show');
+    });
+</script>
+
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -61,6 +93,36 @@
   </head>
   <body>
     <div class="container-fluid">
+
+      <!-- Large modal -->
+
+<div class="modal fade bs-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="">
+
+                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <img  class="img-responsive" id="special" src="pictures/keylime1.jpg" alt="Dessert">
+
+              <div class="modal-caption">
+                <h3>Try our new Key Lime Pie and get 10% off whole order</h3>
+                <p>Key Lime Pie : $6</p>
+      
+    </div>
+  </div>
+</div>
+
+
+    <div id="myModal" class="modal fade">
+      <div class="modal-lg">
+
+            <div class="modal-body col-xs-12">
+
+              </div>
+
+
+          </div>
+        </div>
+      </div>
       
       
       <div class="row top-head" id="top-header">
@@ -109,7 +171,7 @@
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
                   <li><a href="#menu-alforno">Menu</a></li>
                   <li><a href="#footer-info">Contact</a></li>
                   <li><a target="_blank" href="http://www.simplemenu.com/menus/alfornopizza">Order Online</a></li>
